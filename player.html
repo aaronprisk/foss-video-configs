@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Player</title>
+  <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet">
+  
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+  
+<body>
+  <video 
+    id='my-video'
+    class='video-js vjs-big-play-centered' 
+    controls preload='auto'
+    width='800'
+    height='600'
+    poster='poster.png' 
+    data-setup='{}'>
+    
+    <source src='http://IP-OR-URL-HERE:8080/hls/stream.m3u8' type='application/x-mpegURL'>
+    
+    <p class='vjs-no-js'>
+      To view this video, please ensure Javascript is enabled and you are using an HTML5 compatible browser.
+    </p>
+  </video>
+
+  <script src='https://vjs.zencdn.net/7.10.2/video.js'></script>
+</body>
+</html>
